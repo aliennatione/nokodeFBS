@@ -44,10 +44,12 @@
       web = {
         # The command to start the server. It will use the port provided
         # by the environment variable $PORT.
-        command = ["npm", "start"];
+        command = ["npm" "start"];
         manager = "web";
-        # The port the application will listen on
-        port = 3001;
+          env = {
+            # Environment variables to set for your server
+            PORT = "$PORT";
+          };
       };
     };
   };

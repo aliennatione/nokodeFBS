@@ -12,7 +12,7 @@ const config = {
     apiKey: process.env.OPENAI_API_KEY
   },
   gemini: {
-    model: process.env.GEMINI_MODEL || 'gemini-pro',
+    model: process.env.GEMINI_MODEL || 'gemini-2.5-pro-latest',
     apiKey: process.env.GEMINI_API_KEY
   }
 };
